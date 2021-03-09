@@ -13,7 +13,7 @@ import java.util.concurrent.ExecutionException;
 public class NewOrder {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        for (var i = 0; i < 50; i++) {
+        for (var i = 0; i < 10; i++) {
 
             var producer = new KafkaProducer<String, String>(properties());
             var key = UUID.randomUUID().toString();
