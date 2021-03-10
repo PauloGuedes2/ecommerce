@@ -4,6 +4,7 @@ import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
+import java.util.Map;
 import java.util.Properties;
 
 public class EmailService {
@@ -13,7 +14,8 @@ public class EmailService {
         try (var service = new KafkaService(EmailService.class.getSimpleName(),
                 "ECOMMERCE_SEND_EMAIL",
                 emailService::parse,
-                String.class)) {
+                String.class,
+                Map.of())) {
             service.run();
         }
     }
