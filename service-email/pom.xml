@@ -13,15 +13,8 @@
     <dependencies>
         <dependency>
             <groupId>br.com.alura</groupId>
-            <artifactId>ecommerce</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>br.com.alura</groupId>
             <artifactId>commom-kafka</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 
