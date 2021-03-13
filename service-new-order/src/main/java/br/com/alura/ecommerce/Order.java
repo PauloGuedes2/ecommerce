@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 @AllArgsConstructor
 public class Order {
-    private final String userId, orderId;
+    private final String orderId;
     private final BigDecimal amount;
     private final String email;
 }

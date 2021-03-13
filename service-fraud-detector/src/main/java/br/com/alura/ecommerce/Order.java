@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 @ToString
 @Getter
 public class Order {
-    private final String userId, orderId;
+    private final String orderId;
+    private final String email;
     private final BigDecimal amount;
 }
